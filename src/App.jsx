@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import EditNoteModal from "./EditNoteModal";
-import Heading from "./Heading";
-import NoteForm from "./NoteForm";
-import Notelists from "./Notelists";
+import EditNoteModal from "./components/EditNoteModal";
+import Heading from "./components/Heading";
+import NoteForm from "./components/NoteForm";
+import Notelists from "./components/Notelists";
 
 function App() {
   const [notes, setNotes] = useState(() => {
@@ -19,7 +19,6 @@ function App() {
   };
 
   const [editingNote, setEditingNote] = useState(null);
-
   const handleEditNote = (updatedNote) => {
     setNotes(
       notes.map((note) => (note.id === updatedNote.id ? updatedNote : note))
