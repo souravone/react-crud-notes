@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import "tailwindcss";
+
+body {
+  @apply bg-fuchsia-300;
+}
+
+@theme {
+  --font-sans: "Lexend", sans-serif;
+}
